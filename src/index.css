@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans JP', 'Noto Sans Myanmar', sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Noto Sans JP', 'Noto Sans Myanmar', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.65;
+  }
+}
+
+/* Ruby / Furigana styling for clean Japanese + Myanmar legibility */
+ruby {
+  ruby-align: center;
+  ruby-position: over;
+}
+
+rt {
+  font-size: 0.62em;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  user-select: none;
+  opacity: 0.88;
+}
+
+.hide-furigana rt {
+  display: none;
+}
+
+/* 3D Flashcard perspective utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

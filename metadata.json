@@ -1,0 +1,6 @@
+{
+  "name": "SSW2 Shukuhaku Master Guide",
+  "description": "Master Study & Exam Preparation Platform for Specified Skilled Worker No.2 - Accommodation Industry (特定技能2号 宿泊業) with Myanmar translations, interactive calculators, flashcards, and 109 mock exam questions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
